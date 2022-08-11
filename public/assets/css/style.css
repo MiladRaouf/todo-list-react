@@ -1,0 +1,108 @@
+/* ================================================== All Style => */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+@font-face {
+    font-family: 'iranSans';
+    src: url(../fonts/IRANSans.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: 'iranSansBold';
+    src: url(../fonts/IRAN\ Sans\ Bold.ttf) format('TrueType');
+}
+
+body {
+    background: gray;
+    font-family: iranSans;
+    background: #136a8a;
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);
+    background: linear-gradient(to right, #267871, #136a8a);
+
+}
+
+/* ================================================== Small Size => */
+
+.todo-box {
+    color: #555;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px 15px;
+}
+
+.title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.todo-box>form {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.todo-box>form>button {
+    border: none;
+    height: 100%;
+    padding: 5px;
+    flex-basis: 100px;
+    background: greenyellow;
+    text-align: center;
+}
+
+.todo-box>form>input {
+    flex-grow: 2;
+    border: none;
+    padding: 5px;
+    height: 100%;
+    outline: none;
+}
+
+.todo-box ul {
+    padding: 0;
+    list-style: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.todo-box ul>:nth-child(odd) {
+    background: #ddd;
+}
+
+.todo-box ul>:nth-child(even) {
+    background: #ccc;
+}
+
+.todo-box li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+}
+
+.todo-box li i {
+    text-align: center;
+    padding: 3px 7px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.todo-box li i:hover {
+    color: #000;
+}
+
+.todo-box li i:not(.todo-box li i:first-of-type) {
+    margin-right: 15px;
+}
