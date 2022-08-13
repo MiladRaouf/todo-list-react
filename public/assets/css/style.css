@@ -45,6 +45,25 @@ body {
     font-family: 'iranSansBold';
 }
 
+.no-list-title {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.95em;
+    width: fit-content;
+    background: #FFF8BC;
+    border: 2px solid #FFE898;
+    color: #A64B2A;
+}
+
+.empty-input-message {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.95em;
+    background: #FFADAD;
+    border: 2px solid #FE8F8F;
+    color: #911F27;
+}
+
 .todo-box>form {
     border-radius: 10px;
     overflow: hidden;

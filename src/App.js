@@ -5,23 +5,7 @@ import { TasksContext } from './TasksContext';
 
 function App() {
   const context = useContext(TasksContext);
-  const [taskItems, setTaskItems] = useState([
-    {
-      id: 1,
-      title: 'کار شماره 1',
-      done: true
-    },
-    {
-      id: 2,
-      title: 'کار شماره 2',
-      done: false
-    },
-    {
-      id: 3,
-      title: 'کار شماره 3',
-      done: false
-    }
-  ]);
+  const [taskItems, setTaskItems] = useState([]);
 
   return (
     <section className="todo-parent">
