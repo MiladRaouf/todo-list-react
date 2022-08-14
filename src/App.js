@@ -13,7 +13,7 @@ function App() {
         <div className="row">
           <div className="col-12">
             <div className="todo-box">
-              <h4 className="title">لیست کارها</h4>
+              <h4 className="title">لیست فعالیت ها</h4>
               <TasksContext.Provider value={{ taskItems, setTaskItems }}>
                 <TopForm />
                 <Tasks />

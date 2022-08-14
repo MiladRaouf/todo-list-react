@@ -20,15 +20,17 @@ const TopForm = () => {
             setInputTask('');
             setEmptyInputText('');
         } else {
-            setEmptyInputText('فعالیت مورد نظر خود را وارد کنید (تعداد حروف بیش از 2 حرف مجاز میباشد)')
+            setEmptyInputText('فعالیت مورد نظر خود را وارد کنید (تعداد حروف بیش از 2 حرف مجاز میباشد)');
         }
     };
 
     return (
         <Fragment>
-            {emptyInputText.length ? <h6 className="empty-input-message">{emptyInputText}</h6> : ''}
+            <h6 className={`empty-input-message ${emptyInputText.length ? 'active' : ''}`}>
+                {emptyInputText}
+            </h6>
             <form onSubmit={handleSaveTask}>
-                <input type="text" value={inputTask} onChange={handleSetInputTask}></input>
+                <input type="text" placeholder="فعالیت مورد نظر خود را وارد کنید" value={inputTask} onChange={handleSetInputTask}></input>
                 <button type="submit">ثبت</button>
             </form>
         </Fragment>
